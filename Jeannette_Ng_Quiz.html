@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+
+	<title>😻Quiz</title>
+	<link rel="stylesheet" href=styles.css>
+
+</head>
+
+<body>
+	<header>
+		<!-- header texts -->
+		<div class="headertext wrapper2">
+			<!-- Timer on top -->
+			<div class="navbar">
+				<div id="timer">
+					<h1><i class="far fa-clock"></i>Timer</h1>
+				</div>
+				<div class="tools">
+					<label for="addone">
+						<div class="box addone" id="addone" name="addone">+</div>
+					</label>
+					<label for="subtract">
+						<div class="box subtract" name="subtract">-</div>
+					</label>
+					<label for="reset">
+						<div class="box reset" name="reset" id="reset">Reset</div>
+					</label>
+					<label for="pause">
+						<div class="box pause" name="pause" id="pause"">Pause</div>
+					</label>
+					<label for=" resume">
+							<div class="box resume" name="resume" id="resume">Resume</div>
+					</label>
+				</div>
+			</div>
+			<h1>Are you a cat at heart?</h1>
+			<h2>It's about how cat like you are.</h2>
+			<div class="instruction" name="instruction">
+				<h1>Instructions</h1>
+			</div>
+			<div class="instructionpage" id="instructionpage">
+				<p>Complete the test before time runs out!</p>
+				<p>+ : adds 1 min</p>
+				<p>- :subtracts 1 min</p>
+				<p>Reset: Resets timer to 0</p>
+				<p>Pause: Pauses timer</p>
+				<p>Resume: Resumes paused timer</p>
+				<p>[x]Click to close</p>
+			</div>
+			<div class="startTest" name="startTest">
+				<h1>Let's Start!</h1>
+			</div>
+		</div>
+
+	</header>
+	<form action="" id="drinkform">
+		<!-- QUESTION 1 -->
+		<section class="Question1" id="Question1">
+			<div class="question">
+				<h3>What do you like to drink?</h3>
+			</div>
+			<div class="selectionpick wrapper">
+				<label for="water">
+					<input type="radio" name="drink" id="water" value="water">
+					<div class="selection">
+						<div class="overlay" id="overlay"></div>
+						<img src="images/water.jpg">
+						<p>Water</p>
+					</div>
+				</label>
+				<label for="milk">
+					<input type="radio" name="drink" id="milk" value="milk" class="visuallyhidden">
+					<div class="selection">
+						<div class="overlay" id="overlay"></div>
+						<img src="images/milk.jpg">
+						<p>Milk</p>
+					</div>
+				</label>
+			</div>
+		</section>
+		<!-- Question 2 -->
+		<section class="Question2">
+			<div class="question">
+				<h3>What do you like to eat?</h3>
+			</div>
+			<div class="selectionpick wrapper">
+				<label for="fish">
+					<input type="radio" name="food" id="fish" value="fish">
+
+					<div class="selection">
+						<div class="overlay" id="overlay"></div>
+
+						<img src="images/fishbowl.jpg">
+						<p>Fish</p>
+					</div>
+				</label>
+				<label for="taco">
+					<input type="radio" name="food" id="taco" value="taco">
+					<div class="selection">
+						<div class="overlay" id="overlay"></div>
+
+						<img src="images/taco.jpg">
+						<p>Taco</p>
+					</div>
+				</label>
+			</div>
+		</section>
+		<!-- Question 3 -->
+		<section class="Question3">
+			<div class="question">
+				<h3>What type of exercise do you like?</h3>
+			</div>
+			<div class="selectionpick wrapper">
+				<label for="laserpointer">
+					<input type="radio" name="exercise" id="laserpointer" value="laserpointer">
+					<div class="selection">
+						<div class="overlay" id="overlay"></div>
+
+						<img src="images/laser.jpg">
+
+						<p>Playing with the laserpointer</p>
+					</div>
+				</label>
+
+				<label for="running">
+					<input type="radio" name="exercise" id="running" value="running">
+					<div class="selection">
+						<div class="overlay" id="overlay"></div>
+
+						<img src="images/running.jpg">
+						<p>Running</p>
+					</div>
+				</label>
+			</div>
+		</section>
+		<div class="clickresults">
+			<div class="submit" name="submit" value="submit" id="submit">
+				<h1>Submit</h1>
+			</div>
+		</div>
+		<div id="resultContainer" class="result">
+			<div class="resulttext">
+			</div>
+			<div class="resultimage">
+			</div>
+		</div>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
